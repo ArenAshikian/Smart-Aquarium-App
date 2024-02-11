@@ -14,6 +14,12 @@
 		7A2A1DAA2B75D0B200DA98F1 /* Smart_Aquarium_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A1DA92B75D0B200DA98F1 /* Smart_Aquarium_AppTests.swift */; };
 		7A2A1DB42B75D0B200DA98F1 /* Smart_Aquarium_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A1DB32B75D0B200DA98F1 /* Smart_Aquarium_AppUITests.swift */; };
 		7A2A1DB62B75D0B200DA98F1 /* Smart_Aquarium_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2A1DB52B75D0B200DA98F1 /* Smart_Aquarium_AppUITestsLaunchTests.swift */; };
+		7A97E24B2B784B7D00966804 /* Info_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97E24A2B784B7D00966804 /* Info_List.swift */; };
+		7A97E24F2B78501C00966804 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97E24E2B78501C00966804 /* FirstScreen.swift */; };
+		7A97E2512B78508000966804 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97E2502B78508000966804 /* SecondScreen.swift */; };
+		7A97E2532B7850FD00966804 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97E2522B7850FD00966804 /* ThirdScreen.swift */; };
+		7A97E2552B78511600966804 /* FourthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97E2542B78511600966804 /* FourthScreen.swift */; };
+		7A97E2572B78512F00966804 /* FifthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97E2562B78512F00966804 /* FifthScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		7A2A1DAF2B75D0B200DA98F1 /* Smart-Aquarium-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smart-Aquarium-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A2A1DB32B75D0B200DA98F1 /* Smart_Aquarium_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Aquarium_AppUITests.swift; sourceTree = "<group>"; };
 		7A2A1DB52B75D0B200DA98F1 /* Smart_Aquarium_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smart_Aquarium_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A97E24A2B784B7D00966804 /* Info_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_List.swift; sourceTree = "<group>"; };
+		7A97E24E2B78501C00966804 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		7A97E2502B78508000966804 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		7A97E2522B7850FD00966804 /* ThirdScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
+		7A97E2542B78511600966804 /* FourthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreen.swift; sourceTree = "<group>"; };
+		7A97E2562B78512F00966804 /* FifthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,12 @@
 			children = (
 				7A2A1D982B75D0B000DA98F1 /* Smart_Aquarium_AppApp.swift */,
 				7A2A1D9A2B75D0B000DA98F1 /* ContentView.swift */,
+				7A97E24A2B784B7D00966804 /* Info_List.swift */,
+				7A97E24E2B78501C00966804 /* FirstScreen.swift */,
+				7A97E2502B78508000966804 /* SecondScreen.swift */,
+				7A97E2522B7850FD00966804 /* ThirdScreen.swift */,
+				7A97E2542B78511600966804 /* FourthScreen.swift */,
+				7A97E2562B78512F00966804 /* FifthScreen.swift */,
 				7A2A1D9C2B75D0B200DA98F1 /* Assets.xcassets */,
 				7A2A1D9E2B75D0B200DA98F1 /* Preview Content */,
 			);
@@ -257,8 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A97E2552B78511600966804 /* FourthScreen.swift in Sources */,
+				7A97E24F2B78501C00966804 /* FirstScreen.swift in Sources */,
+				7A97E2532B7850FD00966804 /* ThirdScreen.swift in Sources */,
+				7A97E24B2B784B7D00966804 /* Info_List.swift in Sources */,
 				7A2A1D9B2B75D0B000DA98F1 /* ContentView.swift in Sources */,
+				7A97E2572B78512F00966804 /* FifthScreen.swift in Sources */,
 				7A2A1D992B75D0B000DA98F1 /* Smart_Aquarium_AppApp.swift in Sources */,
+				7A97E2512B78508000966804 /* SecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
