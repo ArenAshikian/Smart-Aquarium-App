@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var authManager = AuthManager()
     @State private var name: String = ""
     @State private var password: String = ""
     @State private var showPassword: Bool = false
@@ -16,6 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(alignment: .center, spacing: 15) {
+                
                 Spacer()
                 
                 TextField("Name",
@@ -69,8 +71,19 @@ struct ContentView: View {
                     Button {
                         // Perform login action here
                         print("do login action")
-                        
-                        // Set navigateToPagesView to true to trigger the navigation
+//                        When api is implemented then uncomment
+//                        authManager.login(username: name, password: password) { success in
+//                                            if success {
+//                                                // Authentication successful, navigate to the next screen
+//                                                print("Login successful")
+//                                                // Set navigateToPagesView to true to trigger the navigation
+//                                                navigateToPagesView = true
+//                                            } else {
+//                                                // Authentication failed, show an error message or take appropriate action
+//                                                print("Login failed")
+//                                            }
+//                                        }
+                        // Set navigateToPagesView to true to trigger the navigation (When api implemented then comment out)
                         navigateToPagesView = true
                     } label: {
                         Text("Sign In")
@@ -122,19 +135,20 @@ struct Pages_View: View {
         ZStack {
             VStack {
                 TabView(selection: $selectedTab){
-                    // Replace the following views with your actual views
-                    Text("House View")
-                        .tag(Tab.house)
-                    Text("Message View")
-                        .tag(Tab.message)
-                    Text("Person View")
-                        .tag(Tab.person)
-                    Text("Car View")
-                        .tag(Tab.car)
-                    Text("Trash View")
-                        .tag(Tab.trash)
+                    TabView(selection: $selectedTab){
+                    FirstScreen()
+                            .tag(Tab.house)
+                    SecondScreen()
+                            .tag(Tab.message)
+                    ThirdScreen()
+                            .tag(Tab.person)
+                    FourthScreen()
+                            .tag(Tab.car)
+                    FifthScreen()
+                            .tag(Tab.trash)
                 }
             }
+        }
             VStack {
                 Spacer()
                 MyTabBar(selectedTab: $selectedTab)
